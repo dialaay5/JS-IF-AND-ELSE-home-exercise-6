@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>targill 4</title>
+</head>
+<body>
+    <h1>input integer number from the user between 1 to 9999 </h1>
+    <script>
+         x = parseInt(prompt('enter integer number between 1 to 9999'))
+         document.write(`${x} <br/><br/>`)
+        if (x >= 1 && x  <= 9) {
+            document.write(`${x % 10}`)
+        }
+        else{
+            if(x >= 10 && x <= 99){
+                document.write(`${(x % 10) + Math.floor(x / 10)}`)
+            }
+            else{
+                if(x >= 100 && x <= 999){
+                    document.write(`${(x % 10) + Math.floor((x % 100) / 10) + Math.floor(x / 100)}`)
+                }
+                else{
+                    document.write(`${(x % 10) + Math.floor((x % 100) / 10) + (Math.floor(x / 100) % 10) + Math.floor( x / 1000)}`)
+                }
+            }
+        }
+         
+    </script>
+    <br><br>
+    <img src="iimg 6.jpg" alt="flowcharttt">
+
+    
+</body>
+</html>
